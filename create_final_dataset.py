@@ -49,7 +49,7 @@ with tqdm(total=total, desc='Creating dataset') as pbar:
         image = blur_brightness_contrast_noise.augment(image)
 
         name = os.path.split(image_path)[-1]
-        name = name.split('/')[0]
+        name = name.split('.')[0]
         image.save(os.path.join(processed_image_dir, name+'.jpg'))
         np.savetxt(os.path.join(processed_label_dir, name+'.txt'), label, fmt='%.6f')
         pbar.update(1)

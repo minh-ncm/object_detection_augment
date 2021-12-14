@@ -11,6 +11,6 @@ Current method support:
 Sample dataset from: [face mask dataset](https://www.kaggle.com/andrewmvd/face-mask-detection)
 
 ## Samples
-
+Note: Samples not use cutmix method<br>
 [Original with label](sample_original)<br>
 [Processed with label](sample_processed)
